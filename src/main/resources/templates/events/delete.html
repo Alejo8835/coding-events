@@ -8,15 +8,15 @@
 <form method="post">
 
         <th:block th:each="event : ${events}">
-            <div>
-            <label class="form-control">
+            <div class="form-group">
+            <label>
                 <span th:text="${event.name}"></span>
                 <input type="checkbox" name="eventIds" th:value="${event.id}" class="form-control">
             </label>
             </div>
         </th:block>
 
-    <input type="submit" value="Delete" class="btn btn-danger">
+        <input type="submit" value="Delete" class="btn btn-danger">
 </form>
 
 </body>
