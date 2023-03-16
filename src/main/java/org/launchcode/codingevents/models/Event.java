@@ -65,10 +65,12 @@ public class Event extends AbstractEntity {
     }
 
     public EventCategory getEventCategory() {
+
         return eventCategory;
     }
 
     public void setEventCategory(EventCategory eventCategory) {
+
         this.eventCategory = eventCategory;
     }
 
